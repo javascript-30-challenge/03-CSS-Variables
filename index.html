@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" defer src="./script.js"></script>
+  <title>Scoped CSS Variables and JS</title>
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+    <br>
+    <label for="border-radius">Border Radius</label>
+    <input id="border-radius" type="range" name="border-radius" min="0" max="20" value="10" data-sizing="px">
+    
+    <label for="rotate">Rotate</label>
+    <input id="rotate" type="range" name="rotate" min="-360" max="360" value="0" data-sizing="deg">
+    <br>
+    <ul>
+      <li>Spacing:
+        <span id="spacing-value">10px</span>
+      </li>
+      <li>Blur:
+        <span id="blur-value">0px</span>
+      </li>
+      <li>Border Radius:
+        <span id="border-radius-value">10px</span>
+      </li>
+      <li>Rotate:
+        <span id="rotate-value">0deg</span>
+      </li>
+    </ul>
+  </div>
+
+  <img src="https://images.pexels.com/photos/276092/pexels-photo-276092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="400px" height="400px">
+
+</body>
+</html>
